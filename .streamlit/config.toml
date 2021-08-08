@@ -1,0 +1,13 @@
+
+[theme]
+
+base="dark"
+primaryColor="#000000"
+backgroundColor="#000000"
+secondaryBackgroundColor="#000000"
+
+
+# Font color for the page.
+textColor = "#FFFFFF"
+
+
