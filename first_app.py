@@ -1,6 +1,12 @@
 import streamlit as st
 import text2emotion as te
 from pythonosc.udp_client import SimpleUDPClient
+import socket
+
+
+host_name = socket.gethostbyname(socket.gethostname())
+print(host_name)
+st.write(host_name)
 
 ip = "192.168.0.4"  # update to ip of exhibition wifi
 port = 12345
