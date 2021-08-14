@@ -3,11 +3,6 @@ import text2emotion as te
 from pythonosc.udp_client import SimpleUDPClient
 import socket
 
-
-host_name = socket.gethostbyname(socket.gethostname())
-print(host_name)
-st.write(host_name)
-
 ip = "192.168.0.4"  # update to ip of exhibition wifi
 port = 12345
 client = SimpleUDPClient(ip, port)
@@ -44,3 +39,7 @@ if submit:
     client.send_message("/surprise", values[2])
     client.send_message("/sad", values[3])
     client.send_message("/fear", values[4])
+
+host_name = socket.gethostbyname(socket.gethostname())
+print(host_name)
+st.write(host_name)
